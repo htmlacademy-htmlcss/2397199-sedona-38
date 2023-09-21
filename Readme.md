@@ -4,7 +4,7 @@
 <<<<<<< Updated upstream
 * Наставник: `Неизвестно`.
 =======
-* Наставник: [Александр Зиновьев(pfgbcm lkz ghj,s)](https://htmlacademy.ru/profile/id198751).
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 >>>>>>> Stashed changes
 
 ---

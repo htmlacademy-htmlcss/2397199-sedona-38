@@ -34,6 +34,14 @@ body {
     font-family: inherit;
 }
 
+.button-secondary {
+    background-color: #756157;
+}
+
+.button-tertiary {
+    background-color: #7DB54F;
+}
+
 .visually-hidden {
     visibility: hidden;
 }
@@ -53,13 +61,13 @@ body {
 }
 
 .navigation-link-img-search {
-    background-image: url(../images/icon/icon-search\ \(1\).svg);
+    background-image: url(../images/icon/icon-search.svg);
     width: 20px;
     height: 20px;
 }
 
 .navigation-link-img-favourites {
-    background-image: url(../images/icon/icon-favourites\ \(1\).svg);
+    background-image: url(../images/icon/icon-favourites.svg);
     width: 20px;
     height: 20px;
 }
@@ -70,7 +78,7 @@ body {
 }
 
 .welcom-section {
-    background-image: url(../images/background-image/index-background\ \(1\).jpg);
+    background-image: url(../images/background-image/index-background.jpg);
     background-repeat: no-repeat;
 }
 
@@ -136,7 +144,7 @@ body {
 .offer-wrapper-home {
     width: 75px;
     height: 72px;
-    background-image: url(../images/icon/icon-home\ \(1\).svg);
+    background-image: url(../images/icon/icon-home.svg);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -145,7 +153,7 @@ body {
 .offer-wrapper-food {
     width: 74px;
     height: 70px;
-    background-image: url(../images/icon/icon-food\ \(1\).svg);
+    background-image: url(../images/icon/icon-food.svg);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -154,7 +162,7 @@ body {
 .offer-wrapper-souvenir {
     width: 64px;
     height: 76px;
-    background-image: url(../images/icon/icon-gift\ \(1\).svg);
+    background-image: url(../images/icon/icon-gift.svg);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -175,10 +183,14 @@ body {
 }
 
 .footer-subcription {
-    background-image: url(../images/background-image/subscribe-background\ \(1\).jpg);
+    background-image: url(../images/background-image/subscribe-background.jpg);
     background-repeat: no-repeat;
     width: 1200px;
     height: 414.86px;
+}
+
+.footer-subcription-catalog {
+    background-image: none;
 }
 
 .footer-subcription-title {
@@ -208,19 +220,129 @@ body {
 }
 
 .socila-link-img-vk {
-    background-image: url(../images/icon/icon-vk\ \(1\).svg);
+    background-image: url(../images/icon/icon-vk.svg);
     width: 24px;
     height: 14px;
 }
 
 .socila-link-img-tg {
-    background-image: url(../images/icon/icon-tg\ \(1\).svg);
+    background-image: url(../images/icon/icon-tg.svg);
     width: 18px;
     height: 15.1px;
 }
 
 .socila-link-img-youtube {
-    background-image: url(../images/icon/icon-youtube\ \(1\).svg);
+    background-image: url(../images/icon/icon-youtube.svg);
     width: 22px;
     height: 17px;
+}
+
+.catalog-link {
+    text-decoration: none;
+}
+
+.bread-crumbs-home {
+    background-image: url(../images/icon/icon-home-crumbs.svg);
+    background-repeat: no-repeat;
+}
+
+.main-header {
+    background-image: url(../images/background-image/filter-background.jpg);
+    background-repeat: no-repeat;
+}
+
+.main-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.bread-crumbs-hotel {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.control {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.catalog-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.card-hotel-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.product-card-hotel,
+.product-card-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card-hotel-rating {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #f2f2f2;
+}
+
+.star {
+    background-image: url(../images/icon/icon-star.svg);
+    height: 17px;
+}
+
+.star-4 {
+    width: 73px;
+}
+
+.star-3 {
+    width: 55px;
+}
+
+.star-2 {
+    width: 37px;
+}
+
+.pagination-link {
+    text-decoration: none;
+    color: #000000;
+    background-color: #82B3D3;
+}
+
+.pagination-link-one {
+    background-color: #f2f2f2;
+}
+
+.paginatin-link-other {
+    background-color: #ffffff;
+}
+
+.footer-subcription-title {
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.footer-subcription-decription {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }

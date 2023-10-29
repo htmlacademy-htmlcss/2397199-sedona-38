@@ -95,6 +95,7 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -191,23 +192,20 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 400px);
+}
+
+.advantages-item-city {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.advantages-item-bridge {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .advantages-wrapper {
     background-color: #82B3D3;
-}
-
-.advantages-wrapper-city {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.advantages-wrapper-bridge {
-  grid-column: 2/4;
-  grid-row: 3/4;
 }
 
 .img-city-advantages,
@@ -217,12 +215,10 @@ body {
 
 .img-city-advantages {
   grid-column: 2/4;
-  grid-row: 1/2;
 }
 
 .img-bridge-advantages {
   grid-column: 1/3;
-  grid-row: 3/4;
 }
 
 .advantages-item {
@@ -235,9 +231,7 @@ body {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 400px);
     grid-column: 1/-1;
-    grid-row: 2/3;
 }
 
 .general-advantages {
@@ -488,31 +482,31 @@ body {
   grid-column: 3/4;
 }
 
+.social-link-vk {
+  background-image: url(../images/icon/icon-vk.svg);
+  width: 24px;
+  height: 14px;
+}
 .social-item-vk {
-    background-image: url(../images/icon/icon-vk.svg);
-    width: 24px;
-    height: 14px;
-    background-repeat: no-repeat;
-    justify-self: center;
-    align-self: center;
+  padding: 13px 12px;
 }
 
+.social-link-tg {
+  background-image: url(../images/icon/icon-tg.svg);
+  width: 18px;
+  height: 15.1px;
+}
 .social-item-tg {
-    background-image: url(../images/icon/icon-tg.svg);
-    width: 18px;
-    height: 15.1px;
-    background-repeat: no-repeat;
-    justify-self: center;
-    align-self: center;
+  padding: 12px 15px 13px;
 }
 
-.social-item-youtube {
+.social-link-youtube {
     background-image: url(../images/icon/icon-youtube.svg);
     width: 22px;
     height: 17px;
-    background-repeat: no-repeat;
-    justify-self: center;
-    align-self: center;
+}
+.social-item-youtube {
+  padding: 12px 13px;
 }
 
 .social-media {
@@ -527,6 +521,8 @@ body {
 .social-link {
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 .catalog-link {

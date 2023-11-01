@@ -47,7 +47,7 @@ body {
   background-color: #68A2CA;
 }
 .button:active {
-  color: #ffffff 30%;
+  color: rgba(255, 255, 255, 0.30)
 }
 
 .button-secondary {
@@ -59,7 +59,7 @@ body {
   background-color: #615048;
 }
 .button-secondary:active {
-  color: #ffffff 30%;
+  color: rgba(255, 255, 255, 0.30)
 }
 
 .button-tertiary {
@@ -71,7 +71,7 @@ body {
   background-color: #6C9E42;
 }
 .button-tertiary:active {
-  color: #ffffff 30%;
+  color: rgba(255, 255, 255, 0.30)
 }
 
 .visually-hidden {
@@ -105,7 +105,8 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
-  align-items: center;
+  align-items: start;
+  flex-wrap: wrap;
 }
 
 .page-header-logo {
@@ -118,7 +119,7 @@ body {
 
 .navigation-list {
   display: flex;
-  max-width: 460px;
+  max-width: 470px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -151,11 +152,29 @@ body {
 }
 
 .navigation-link-favourites {
-  background-image: url(../images/icon/icon-favourites.svg);
+  background-image: url(../images/icon/favourites.svg);
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.account-favourites {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 50%;
 }
 
 .navigation-icon {
@@ -177,8 +196,11 @@ body {
   display: flex;
   padding: 8px 34px;
   text-decoration: none;
-  align-items: flex-start;
   justify-content: center;
+  margin: 14px 0;
+  max-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .navigation-item {
@@ -241,6 +263,7 @@ body {
 
 .advantages-line-black {
   border-bottom: 2px solid #000000;
+  opacity: 0.30;
 }
 
 .advantages-list {
@@ -299,7 +322,6 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 0 auto;
-  width: 285px;
 }
 
 .wrapper-white-text {
@@ -531,7 +553,7 @@ body {
 }
 
 .phone-link:active {
-  color: #756157 30%;
+  color: rgba(117, 97, 87, 0.30)
 }
 
 .img-logo-html {
@@ -576,12 +598,10 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  display: 4px;
   grid-column: 1/2;
   }
 
 .social-link {
-  display: block;
   width: 47px;
   height: 40px;
   display: flex;
@@ -601,7 +621,7 @@ body {
   mask-size: contain;
   -webkit-mask-size: contain;
   background-color: #83B3D3;
-  transition: background;
+  transition: background 250ms ease-in-out;
 }
 
 .social-link:hover::before {
@@ -621,11 +641,26 @@ body {
 }
 
 .bread-crumbs-home {
+ width: 20px;
+ height: 20px;
+}
+
+.bread-crumbs-link-home {
+  width: 20px;
+  height: 20px;
+}
+
+
+.bread-crumbs-link-home::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 21px;
+  margin-top: -3px;
   background-image: url(../images/icon/icon-home-crumbs.svg);
   background-repeat: no-repeat;
-  width: 13px;
-  height: 12px;
-  margin: 5px;
+  background-position: center;
+  background-size: contain;
 }
 
 .bread-crumbs-arrow {
@@ -637,7 +672,7 @@ body {
   background-position: center;
 }
 
-.bread-crumbs-hotel {
+.bread-crumbs-link-hotel {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -723,7 +758,8 @@ body {
 
 .catalog-filter-reset:hover {
   background-color: transparent;
-  color: #ffffff 30%;
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 .catalog-filter-reset:active {
@@ -954,7 +990,7 @@ body {
 }
 
 .pagination-link:active {
-  color: #ffffff 30%;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .phone-list {
@@ -975,7 +1011,7 @@ body {
 }
 
 .pagination-link-one:active {
-  color: #000000 30%;
+  color: rgba(0, 0, 0, 0.30)
 }
 
 .pagination-link-other {

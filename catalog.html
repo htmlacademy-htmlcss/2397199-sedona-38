@@ -38,6 +38,7 @@
           <li class="navigation-item">
             <a class="navigation-link navigation-link-favourites" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="account-favourites">12</span>
             </a>
           </li>
         </ul>
@@ -53,7 +54,9 @@
         <!--Хлебные крошки-->
         <ol class="bread-crumbs">
           <li class="bread-crumbs-item bread-crumbs-home">
-            <a class="visually-hidden bread-crumbs-link-home" href="index.html" aria-current="page">Главная страница</a>
+            <a class="bread-crumbs-link-home" href="index.html" aria-current="page">
+              <span class="visually-hidden">Главная страница</span>
+            </a>
           </li>
           <li class="bread-crumbs-item bread-crumbs-arrow">
           </li>
@@ -67,25 +70,28 @@
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтр для выбора гостиницы</h2>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="catalog-fiter-container">
+            <div class="catalog-filter-container">
               <fieldset class="catalog-filter-group catalog-filter-infrastructure">
                 <legend class="catalog-filter-title">Инфаструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
                       <span class="control-input-text">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
                       <span class="control-input-text">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
                       <span class="control-input-text">Wi-Fi</span>
                     </label>
                   </li>
@@ -97,24 +103,54 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel" checked>
+                      <span class="control-mark control-mark-radio"></span>
                       <span class="control-input-text">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="motel">
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="motel">
+                      <span class="control-mark control-mark-radio"></span>
                       <span class="control-input-text">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="apartments">
+                      <span class="control-mark control-mark-radio"></span>
                       <span class="control-input-text">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
+
+              <fieldset class="catalog-filter-group catalog-filter-value">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="0" name="min-price">
+                      <span class="range-input-word">от</span>
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="9000" name="max-price">
+                      <span class="range-input-word">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
               <div class="catalog-filter-button">
                 <button class="button catalog-filter-accept" type="submit">Применить</button>
                 <button class="button catalog-filter-reset" type="reset">Сбросить</button>
@@ -138,20 +174,23 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <a class="catalog-link" href="#">
-                <img src="images/icon/icon-grid.svg" width="16" height="14" alt="позиционированние карточек товара сеткой">
-                <span class="visually-hidden">Показать сеткой</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="позиционированние карточек товара сеткой" width="16" height="14" fill="none">
+                  <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
+                </svg>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link" href="#">
-                <img src="images/icon/icon-slider.svg" width="16" height="14" alt="позиционированние карточек товара лентой">
-                <span class="visually-hidden">Показать лентой</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="позиционированние карточек товара лентой" width="16" height="14" fill="none">
+                  <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
+                </svg>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link catalog-link-list" href="#">
-                <img src="images/icon/icon-list.svg" width="16" height="14" alt="позиционированние карточек товара списком">
-                <span class="visually-hidden">Показать списком</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="позиционированние карточек товара списком" width="16" height="14" fill="none">
+                  <path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
+                </svg>
               </a>
             </li>
           </ul>
@@ -242,10 +281,13 @@
             <a href="#" class="pagination-link">4</a>
           </li>
           <li class="pagination-list">
-            <a href="#" class="pagination-link pagination-link-other">...</a>
+            <a href="#" class="pagination-link pagination-link-other">
+              <span aria-hidden="true">...</span>
+              <span class="visually-hidden">Выбрать страницу</span>
+            </a>
           </li>
           <li class="pagination-list">
-            <a href="#" class="pagination-link pagination-link-two-digit">10</a>
+            <a href="#" class="pagination-link">10</a>
           </li>
         </ol>
         <!--/Пагинация-->
@@ -297,6 +339,56 @@
 
     </footer>
     <!--/Подвал страницы-->
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="field-group-text" for="auth-login">Дата Заезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="27 апреля 2020">
+              <span class="input-text-prompting text-prompting-error">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group">
+              <label class="field-group-text text-date-departure" for="auth-password">Дата Выезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-password" name="auth-password" placeholder="1 сентября 2023">
+              <span class="input-text-prompting">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+
+          </form>
+
+            <div class="container-modal-counter">
+              <label  class="modal-container-text">Взрослые:</label>
+              <div class="modal-counter">
+                <button type="submit" class="button-counter">-</button>
+                <input type="number" name="productСount" value="1" disabled="" class="input-counter">
+                <button type="submit" class="button-counter">+</button>
+              </div>
+
+
+              <label class="modal-container-text">Дети:</label>
+              <button class="info-button-modal">
+                <div class="hover-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+                </div>
+              </button>
+              <div class="modal-counter">
+                <button type="submit" class="button-counter">-</button>
+                <input type="number" name="productСount" value="1" disabled="" class="input-counter">
+                <button type="submit" class="button-counter">+</button>
+              </div>
+
+            </div>
+
+          <a class="button button-form-modal" href="#">Найти</a>
+        </section>
+      </div>
+    </div>
 
 
   </div>

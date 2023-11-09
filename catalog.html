@@ -351,36 +351,42 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="field-group-text" for="auth-login">Дата Заезда:</label>
-              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="27 апреля 2020">
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" value="27 апреля 2020" placeholder="Укажите дату заезда">
               <span class="input-text-prompting text-prompting-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
               <label class="field-group-text text-date-departure" for="auth-password">Дата Выезда:</label>
-              <input class="auth-form-field field" type="text" id="auth-password" name="auth-password" placeholder="1 сентября 2023">
+              <input class="auth-form-field field" type="text" id="auth-password" name="auth-password" value="1 сентября 2023" placeholder="Укажите дату выезда">
               <span class="input-text-prompting">На эти даты есть свободные номера. Пока есть.</span>
             </p>
 
           </form>
 
             <div class="container-modal-counter">
-              <label  class="modal-container-text">Взрослые:</label>
+              <label  class="form-label" for="adults">Взрослые:</label>
               <div class="modal-counter">
-                <button type="submit" class="button-counter">-</button>
-                <input type="number" name="productСount" value="1" disabled="" class="input-counter">
-                <button type="submit" class="button-counter">+</button>
+                <button type="submit" class="button-counter button-minus"></button>
+                <input type="number" name="productСount" value="0" min="0" max="99" class="input-counter field" id="adults">
+                <button type="submit" class="button-counter button-plus"></button>
               </div>
 
-
-              <label class="modal-container-text">Дети:</label>
-              <button class="info-button-modal">
-                <div class="hover-text">
-                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
-                </div>
-              </button>
+              <span class="form-label">
+                <label class="form-label" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                    Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+                  </span>
+                </span>
+              </span>
               <div class="modal-counter">
-                <button type="submit" class="button-counter">-</button>
-                <input type="number" name="productСount" value="1" disabled="" class="input-counter">
-                <button type="submit" class="button-counter">+</button>
+                <button type="submit" class="button-counter button-minus"></button>
+                <input type="number" name="productСount" value="0" min="0" max="99" class="input-counter field" id="children">
+                <button type="submit" class="button-counter button-plus"></button>
               </div>
 
             </div>

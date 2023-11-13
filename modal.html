@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Седона: Модальное окно</title>
+</head>
+
+<body>
+  <div class="modal-container">
+    <div class="modal modal-auth">
+
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="field-group-text" for="auth-calling">Дата Заезда:</label>
+            <input class="auth-form-field field" type="text" id="auth-login" name="auth-calling" value="27 апреля 2020" placeholder="Укажите дату">
+            <span class="input-text-prompting text-prompting-error">Мы не можем отправить вас в прошлое.</span>
+          </p>
+          <p class="field-group">
+            <label class="field-group-text text-date-departure" for="auth-departure">Дата Выезда:</label>
+            <input class="auth-form-field field" type="text" id="auth-password" name="auth-departure" value="1 сентября 2023" placeholder="Укажите дату">
+            <span class="input-text-prompting">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+
+        </form>
+
+          <div class="container-modal-counter">
+            <label  class="form-label" for="adults">Взрослые:</label>
+            <div class="modal-counter">
+              <button type="submit" class="button-counter button-minus"></button>
+              <input type="number" name="productСount" value="2" min="0" max="99" class="input-counter field" id="adults">
+              <button type="submit" class="button-counter button-plus"></button>
+            </div>
+
+            <span class="form-label">
+              <label class="form-label" for="children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                  Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+                </span>
+              </span>
+            </span>
+
+            <div class="modal-counter modal-counter-children">
+              <button type="submit" class="button-counter button-minus"></button>
+              <input type="number" name="productСount" value="2" min="0" max="99" class="input-counter field" id="children">
+              <button type="submit" class="button-counter button-plus"></button>
+            </div>
+
+          </div>
+
+        <a class="button button-form-modal" href="#">Найти</a>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+</html>

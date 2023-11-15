@@ -1002,20 +1002,13 @@ body {
   display: flex;
   margin-bottom: 44px;
   width: 290px;
-}
-
-.range-input:first-child {
-  border-radius: 4px 0 0 4px;
-  margin-right: 2px;
-}
-
-.range-input:last-child {
-  border-radius: 0 4px 4px 0;
+  position: relative;
 }
 
 .range-input {
   width: 82px;
-  padding: 12px 31px;
+  padding: 12px 21px;
+  padding-right: 41px;
   font: inherit;
   text-align: start;
   background-color: #f2f2f2;
@@ -1026,6 +1019,15 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.range-input:first-of-type {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.range-input:last-of-type {
+  border-radius: 0 4px 4px 0;
 }
 
 .range-input:focus {
@@ -1039,6 +1041,17 @@ body {
   padding: 0;
   color: #000000;
   opacity: 0.30;
+  position: absolute;
+}
+
+.word-from {
+  left: 108px;
+  top: 13px;
+}
+
+.word-to {
+  left: 250px;
+  top: 13px;
 }
 
 .range-input::-webkit-outer-spin-button,

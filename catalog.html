@@ -128,21 +128,18 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
-                    <input class="range-input" type="number" value="0" name="min-price">
-                    <span class="range-input-word">от</span>
-                  </label>
-                  <label class="catalog-filter-label">
-                    <input class="range-input" type="number" value="9000" name="max-price">
-                    <span class="range-input-word">до</span>
-                  </label>
+                  <input class="range-input" type="number" value="0" name="min-price" placeholder="0">
+                  <span class="range-input-word word-from">от</span>
+
+                  <input class="range-input" type="number" value="9000" name="max-price" placeholder="0">
+                  <span class="range-input-word word-to">до</span>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                   </div>
@@ -151,8 +148,8 @@
             </fieldset>
 
             <div class="catalog-filter-button">
-              <button class="button catalog-filter-accept" type="submit">Применить</button>
-              <button class="button catalog-filter-reset" type="reset">Сбросить</button>
+              <button class="button catalog-filter-accept" type="submit" aria-label="применение выбранных фильтров для отелей">Применить</button>
+              <button class="button catalog-filter-reset" type="reset" aria-label="сброс выбранных фильтров для отелей">Сбросить</button>
             </div>
           </form>
         </section>
@@ -171,25 +168,13 @@
           </select>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <a class="catalog-link catalog-link-border" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-label="позиционированние карточек товара сеткой" width="16" height="14" fill="none">
-                  <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
-                </svg>
-              </a>
+              <a class="catalog-link catalog-link-border catalog-link-grid" href="#"></a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-label="позиционированние карточек товара лентой" width="16" height="14" fill="none">
-                  <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
-                </svg>
-              </a>
+              <a class="catalog-link catalog-link-ribbon" href="#"></a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link catalog-link-list" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-label="позиционированние карточек товара списком" width="16" height="14" fill="none">
-                  <path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
-                </svg>
-              </a>
+              <a class="catalog-link catalog-link-list" href="#"></a>
             </li>
           </ul>
         </section>
@@ -199,7 +184,7 @@
         <ul class="hotels-cards-list">
           <li class="hotels-card">
             <a href="#" class="link-img-hotel">
-              <img class="hotel-amara-img hotel-img" src="images/catalog/hotel-amara.jpg" alt="звездное небо между скал" height="212" width="300">
+              <img class="hotel-amara-img hotel-img" src="images/catalog/hotel-amara.jpg" alt="звездное небо между скал" width="300" height="212">
             </a>
             <a href="#" class="card-hotel-link-title">
               <h3 class="card-hotel-title">Amara Resort & Spa</h3>
@@ -215,7 +200,7 @@
           </li>
           <li class="hotels-card">
             <a href="#" class="link-img-hotel hotel-img">
-              <img class="hotel-villas-img" src="images/catalog/hotel-villas.jpg" alt="гора с лесом под черным небом и радугой" height="212" width="300">
+              <img class="hotel-villas-img" src="images/catalog/hotel-villas.jpg" alt="гора с лесом под черным небом и радугой" width="300" height="212">
             </a>
             <a href="#" class="card-hotel-link-title">
               <h3 class="card-hotel-title">Villas at Poco Diablo</h3>
@@ -231,7 +216,7 @@
           </li>
           <li class="hotels-card">
             <a href="#" class="link-img-hotel hotel-img">
-              <img class="hotel-desert-img" src="images/catalog/hotel-desert.jpg" alt="гора с лесом под голубым небом" height="212" width="300">
+              <img class="hotel-desert-img" src="images/catalog/hotel-desert.jpg" alt="гора с лесом под голубым небом" width="300" height="212">
             </a>
             <a href="#" class="card-hotel-link-title">
               <h3 class="card-hotel-title">Desert Quail Inn</h3>
@@ -247,7 +232,7 @@
           </li>
           <li class="hotels-card">
             <a href="#" class="link-img-hotel">
-              <img class="hotel-greentree-img hotel-img" src="images/catalog/hotel-greenthree.jpg" alt="гора со звездным небом" height="212" width="300">
+              <img class="hotel-greentree-img hotel-img" src="images/catalog/hotel-greenthree.jpg" alt="гора со звездным небом" width="300" height="212">
             </a>
             <a href="#" class="card-hotel-link-title">
               <h3 class="card-hotel-title">GreenTree Inn</h3>
@@ -328,8 +313,8 @@
         </div>
         <div class="logo-html">
           <a class="academy-link" href="https://htmlacademy.ru/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none" class="img-logo-html">
-              <path fill="#000" d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" alt="Логотип HTML-acdemy" width="115" height="34" class="img-logo-html">
+              <path d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
             </svg>
           </a>
         </div>

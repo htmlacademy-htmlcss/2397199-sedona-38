@@ -181,7 +181,7 @@
 
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <button class="modal-close-button" aria-label="закрытие модального окна">
+        <button class="modal-close-button" aria-label="закрытие модального окна" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -195,30 +195,35 @@
             <input class="auth-form-field field" type="text" id="departure" name="auth-departure" value="1 сентября 2023" placeholder="Укажите дату">
             <span class="input-text-prompting">На эти даты есть свободные номера. Пока есть.</span>
           </p>
-          <div class="container-modal-counter">
-            <label  class="form-label" for="adults">Взрослые:</label>
-            <div class="modal-counter">
-              <button type="button" class="button-counter button-minus" aria-label="уменьшение количества взрослых"></button>
-              <input type="number" name="productСount" value="2" min="0" max="99" class="input-counter field" id="adults">
-              <button type="button" class="button-counter button-plus" aria-label="увеличение количества взрослых"></button>
-            </div>
-
-            <span class="form-label">
-              <label class="form-label" for="children">Дети:</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
-                  Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
-                </span>
-              </span>
+          <p class="field-group count-field-group">
+            <span class="short-group">
+              <label class="search-form-label" for="adults">
+                <span>Взрослые:</span>
+              </label>
+              <button class="button-minus button-toggle" type="button">
+                <span class="visually-hidden">Уменьшить число</span>
+              </button>
+              <input class="field count-input" id="adults" name="adults" type="number" placeholder="1" min="1" max="99" value="2" required>
+              <button class="button-plus button-toggle" type="button">
+                <span class="visually-hidden">Увеличить число</span>
+              </button>
             </span>
-
-            <div class="modal-counter modal-counter-children">
-              <button type="button" class="button-counter button-minus" aria-label="уменьшение количества детей"></button>
-              <input type="number" name="productСount" value="2" min="0" max="99" class="input-counter field" id="children">
-              <button type="button" class="button-counter button-plus" aria-label="увеличение количества детей"></button>
-            </div>
-          </div>
+            <span class="short-group">
+              <label class="search-form-label" for="children">
+                <span>Дети:</span>
+              </label>
+              <button class="info-button" type="button">
+                <span class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </button>
+              <button class="button-minus button-toggle" type="button">
+                <span class="visually-hidden">Уменьшить число</span>
+              </button>
+              <input class="field count-input" id="children" name="children" type="number" placeholder="0" min="0" max="99" value="2" required>
+              <button class="button-plus button-toggle" type="button">
+                <span class="visually-hidden">Увеличить число</span>
+              </button>
+            </span>
+          </p>
           <button class="button button-form-modal" type="submit" aria-label="поиск отелей по введёным данным">Найти</button>
         </form>
       </section>
